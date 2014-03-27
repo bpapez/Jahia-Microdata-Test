@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!--
     This file is part of Jahia, next-generation open source CMS:
     Jahia's next-generation, open source CMS stems from a widely acknowledged vision 
@@ -38,57 +39,51 @@
     If you are unsure which license is appropriate for your use, 
     please contact the sales department at sales@jahia.com.
 -->
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <artifactId>jahia-modules</artifactId>
-        <groupId>org.jahia.modules</groupId>
-        <version>7.0.0.0-SNAPSHOT</version>
-    </parent>
-    <groupId>org.jahia.modules</groupId>
-    <artifactId>microdata</artifactId>
-    <name>Jahia Microdata</name>
-    <version>2.0.0-SNAPSHOT</version>    
-    <packaging>bundle</packaging>
-    <description>This is the custom module (Jahia Microdata) for running on a Jahia server.</description>
-  <scm>
-    <connection>scm:git:git@github.com:bpapez/Jahia-Microdata-Test.git</connection>
-    <developerConnection>scm:git:git@github.com:bpapez/Jahia-Microdata-Test.git</developerConnection>
-    <url>scm:git:git@github.com:bpapez/Jahia-Microdata-Test.git</url>
-  </scm>    
-  <repositories>
-    <repository>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>jahia-public</id>
-      <name>Jahia Public Repository</name>
-      <url>https://devtools.jahia.com/nexus/content/groups/public</url>
-    </repository>
-  </repositories>
-    
-	<dependencies>
-	</dependencies>    
-    
-   <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.felix</groupId>
-        <artifactId>maven-bundle-plugin</artifactId>
-        <extensions>true</extensions>
-        <configuration>
-          <instructions>
-            <Jahia-Depends>default,event</Jahia-Depends>
-          </instructions>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                       http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  <modelVersion>4.0.0</modelVersion>  
+  <parent> 
+    <artifactId>jahia-modules</artifactId>  
+    <groupId>org.jahia.modules</groupId>  
+    <version>7.0.0.0-SNAPSHOT</version> 
+  </parent>  
+  <groupId>org.jahia.modules</groupId>  
+  <artifactId>microdata</artifactId>  
+  <name>Jahia Microdata</name>  
+  <version>2.0.0-SNAPSHOT</version>  
+  <packaging>bundle</packaging>  
+  <description>This is the custom module (Jahia Microdata) for running on a Jahia server.</description>  
+  <scm> 
+    <connection>scm:git:git@github.com:bpapez/Jahia-Microdata-Test.git</connection>  
+    <developerConnection>scm:git:git@github.com:bpapez/Jahia-Microdata-Test.git</developerConnection>  
+    <url>scm:git:git@github.com:bpapez/Jahia-Microdata-Test.git</url> 
+  </scm>  
+  <repositories> 
+    <repository> 
+      <releases> 
+        <enabled>true</enabled>  
+        <updatePolicy>never</updatePolicy> 
+      </releases>  
+      <snapshots> 
+        <enabled>true</enabled> 
+      </snapshots>  
+      <id>jahia-public</id>  
+      <name>Jahia Public Repository</name>  
+      <url>https://devtools.jahia.com/nexus/content/groups/public</url> 
+    </repository> 
+  </repositories>  
+  <dependencies></dependencies>  
+  <build> 
+    <plugins> 
+      <plugin> 
+        <groupId>org.apache.felix</groupId>  
+        <artifactId>maven-bundle-plugin</artifactId>  
+        <extensions>true</extensions>  
+        <configuration> 
+          <instructions> 
+            <Jahia-Depends>default,event</Jahia-Depends> 
+          </instructions> 
+        </configuration> 
+      </plugin> 
+    </plugins> 
+  </build> 
 </project>
