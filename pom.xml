@@ -49,14 +49,14 @@
   <groupId>org.jahia.modules</groupId>  
   <artifactId>microdata</artifactId>  
   <name>Jahia Microdata</name>  
-  <version>2.0.2</version>  
+  <version>2.0.3-SNAPSHOT</version>  
   <packaging>bundle</packaging>  
   <description>This is the custom module (Jahia Microdata) for running on a Jahia server.</description>  
   <scm> 
     <connection>scm:git:git@github.com:bpapez/Jahia-Microdata-Test.git</connection>  
     <developerConnection>scm:git:git@github.com:bpapez/Jahia-Microdata-Test.git</developerConnection>  
     <url>scm:git:git@github.com:bpapez/Jahia-Microdata-Test.git</url> 
-    <tag>microdata-2.0.2</tag>
+    <tag>HEAD</tag>
   </scm>  
   <repositories> 
     <repository> 
